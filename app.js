@@ -8,7 +8,9 @@ const session = require("express-session");
 const flash = require("connect-flash");
 // import mongoose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/db_staycation");
+mongoose.connect(
+  "mongodb://flywe:flywemern@cluster0-shard-00-00.azebh.mongodb.net:27017,cluster0-shard-00-01.azebh.mongodb.net:27017,cluster0-shard-00-02.azebh.mongodb.net:27017/db_staycation?ssl=true&replicaSet=atlas-n66gib-shard-0&authSource=admin&retryWrites=true&w=majority"
+);
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");

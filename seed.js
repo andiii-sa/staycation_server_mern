@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  "mongodb://localhost:27017/db_staycation",
+  "mongodb://flywe:flywemern@cluster0-shard-00-00.azebh.mongodb.net:27017,cluster0-shard-00-01.azebh.mongodb.net:27017,cluster0-shard-00-02.azebh.mongodb.net:27017/db_staycation?ssl=true&replicaSet=atlas-n66gib-shard-0&authSource=admin&retryWrites=true&w=majority",
   {
     // useNewUrlParser: true,
     // useCreateIndex: true,
